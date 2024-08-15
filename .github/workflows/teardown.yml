@@ -17,7 +17,7 @@ jobs:
       - name: Initialise Backend
         id: init-backend
         working-directory: ./SSG-API-Testing-Application-v2/deploy/prod/create-backend
-        run: terraform init -migrate-state
+        run: terraform init
 
       - name: Destroy Main Infrastructure
         working-directory: ./SSG-API-Testing-Application-v2/deploy/dev/main-infrastructure
