@@ -14,6 +14,11 @@ jobs:
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v3
 
+      - name: Initialise Backend
+        id: init-backend
+        working-directory: ./SSG-API-Testing-Application-v2/deploy/prod/create-backend
+        run: terraform init
+
       - name: Destroy Main Infrastructure
         working-directory: ./SSG-API-Testing-Application-v2/deploy/dev/main-infrastructure
         env:
