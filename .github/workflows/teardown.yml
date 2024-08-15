@@ -16,7 +16,7 @@ jobs:
 
       - name: Initialise Backend
         id: init-backend
-        working-directory: ./SSG-API-Testing-Application-v2/deploy/dev/create-backend
+        working-directory: ./SSG-API-Testing-Application-v2/deploy/prod/main-infrastructure
         run: terraform init -reconfigure
 
       - name: Destroy Main Infrastructure
