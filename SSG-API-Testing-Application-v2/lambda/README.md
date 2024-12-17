@@ -40,3 +40,8 @@ This POC is meant to showcase how you can put your authentication secrets in AWS
     }
     ```
 
+To import dependencies into AWS Lambda, you can add them via custom layers. The steps to do so are described [here](https://stackoverflow.com/questions/65975883/aws-lambda-python-error-runtime-importmoduleerror)
+
+
+"errorMessage": "HTTPSConnectionPool(host='uat-api.ssg-wsg.sg', port=443): Max retries exceeded with url: /courses/courseRuns/id/35423?includeExpiredCourses=true (Caused by SSLError(SSLError(524297, '[SSL] PEM lib (_ssl.c:3845)')))",
+  "errorType": "SSLError",
